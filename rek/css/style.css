@@ -558,7 +558,7 @@ body.lock {
 }
 
 .full-screen__title {
-  font-size: calc(44px + 96 * ((100vw - 320px) / 880));
+  font-size: calc(45px + 95 * ((100vw - 320px) / 880));
   text-transform: uppercase;
   line-height: 140px;
   position: relative;

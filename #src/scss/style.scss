@@ -261,7 +261,7 @@ body {
    }
 
    &__title {
-      @include fontSize(140, 44);
+      @include fontSize(140, 45);
       text-transform: uppercase;
       line-height: 140px;
       position: relative;
