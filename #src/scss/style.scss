@@ -1045,17 +1045,19 @@ body {
          justify-content: center;
       }
    }
+   &__view::before,
+   &__comment::before {
+      content: "";
+      width: 21px;
+      height: 13px;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
    &__view {
       position: relative;
       padding-left: 28px;
       &::before {
-         content: "";
-         width: 21px;
-         height: 13px;
-         display: block;
-         position: absolute;
-         top: 0;
-         left: 0;
          background: url("/img/blog/icon/01.png") 0 0 no-repeat;
       }
    }
@@ -1065,13 +1067,6 @@ body {
       position: relative;
       padding-left: 28px;
       &::before {
-         content: "";
-         width: 21px;
-         height: 13px;
-         display: block;
-         position: absolute;
-         top: 0;
-         left: 0;
          background: url("/img/blog/icon/02.png") 0 0 no-repeat;
       }
    }

@@ -1291,19 +1291,22 @@ body.lock {
   display: flex;
 }
 
+.blog__view::before,
+.blog__comment::before {
+  content: "";
+  width: 21px;
+  height: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .blog__view {
   position: relative;
   padding-left: 28px;
 }
 
 .blog__view::before {
-  content: "";
-  width: 21px;
-  height: 13px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   background: url("/img/blog/icon/01.png") 0 0 no-repeat;
 }
 
@@ -1314,13 +1317,6 @@ body.lock {
 }
 
 .blog__comment::before {
-  content: "";
-  width: 21px;
-  height: 13px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   background: url("/img/blog/icon/02.png") 0 0 no-repeat;
 }
 
