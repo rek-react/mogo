@@ -1307,7 +1307,7 @@ body.lock {
 }
 
 .blog__view::before {
-  background: url("/img/blog/icon/01.png") 0 0 no-repeat;
+  background: url("../img/blog/icon/01.png") 0 0 no-repeat;
 }
 
 .blog__comment {
@@ -1317,7 +1317,7 @@ body.lock {
 }
 
 .blog__comment::before {
-  background: url("/img/blog/icon/02.png") 0 0 no-repeat;
+  background: url("../img/blog/icon/02.png") 0 0 no-repeat;
 }
 
 .map {
