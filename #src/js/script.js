@@ -50,9 +50,11 @@ $(document).ready(function () {
    //menuBurg
    const menuBurg = $('.header__icon')
    const menu = $('.menu')
+   const search = $('.form-header')
    $(menuBurg).on('click', function () {
       $(this).toggleClass('active')
       $(menu).toggleClass('active')
+      $(search).toggleClass('active')
       $('body').toggleClass('lock')
    })
 

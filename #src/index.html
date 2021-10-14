@@ -20,6 +20,10 @@
                <span></span>
             </div>
             <nav class="header__menu menu">
+               <form action="#" class="form-header">
+                  <input type="text" name="name" class="form-header__search" placeholder="Введите что хотите найти">
+                  <button type="submit" class="form-header__btn">Поиск</button>
+               </form>
                <ul class="menu__list">
                   <li><a href="#" class="menu__link" data-goto=".about">About</a></li>
                   <li><a href="#" class="menu__link" data-goto=".services">service</a></li>
@@ -28,11 +32,11 @@
                   <li><a href="#" class="menu__link" data-goto=".footer">contact</a></li>
                </ul>
                <div class="menu__icons">
-                  <a href="#" class="menu__icon"><img src="img/header/01.svg" alt=""></a>
-                  <a href="#" class="menu__icon"><img src="img/header/02.svg" alt=""></a>
+                  <a href="#" class="menu__icon menu__icon_search"><img src="img/header/01.svg" alt=""></a>
+                  <a href="#" class="menu__icon menu__icon_mag"><img src="img/header/02.svg" alt=""></a>
                </div>
-
             </nav>
+
          </div>
       </header>
       <div class="full-screen">
@@ -818,9 +822,9 @@
                         </li>
                      </ul>
                   </div>
-                  <form action="#" class="form">
-                     <input type="email" class="form__input" name="name" placeholder="Your Email...">
-                     <button type="submit" class="form__btn">Subscribe</button>
+                  <form action="#" class="form-footer">
+                     <input type="email" class="form-footer__input" name="name" placeholder="Your Email...">
+                     <button type="submit" class="form-footer__btn">Subscribe</button>
                   </form>
                </div>
                <div class="footer__column footer__blogs">
