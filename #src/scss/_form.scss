@@ -1,0 +1,48 @@
+.form {
+   margin-top: 40px;
+   display: flex;
+   width: 100%;
+   max-width: 380px;
+   @media (max-width: 967px) {
+      max-width: none;
+   }
+   @media (max-width: 425px) {
+      display: block;
+      margin-top: 0;
+   }
+   &__input {
+      border: 2px solid #ccc;
+      border-right: none;
+      padding: 15px;
+      font-size: 15px;
+      height: 40px;
+      font-style: italic;
+      flex: 0 1 60%;
+      width: 100%;
+      &::placeholder {
+         color: #ccc;
+      }
+      &:focus {
+         border-color: #95e1d3;
+      }
+      @media (max-width: 425px) {
+         border: 2px solid #ccc;
+         margin-bottom: 5px;
+      }
+   }
+   &__btn {
+      background-color: #95e1d3;
+      border: 0;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      width: 100%;
+      flex: 0 1 40%;
+      height: 40px;
+      padding: 0 42px;
+      transition: transform 0.2s linear;
+      &:hover {
+         transform: scale(1.02);
+      }
+   }
+}
