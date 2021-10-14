@@ -15,8 +15,7 @@ body {
       overflow: hidden;
    }
 }
-.wrapper {
-}
+
 .container {
    max-width: 1160px;
    padding: 0 30px;
@@ -267,8 +266,6 @@ body {
          line-height: normal;
       }
    }
-   &__slider {
-   }
 }
 .slider {
    position: absolute;
@@ -325,6 +322,7 @@ body {
 //==================================================================================================================
 
 .content {
+   flex: 1 1 auto;
 }
 .about {
    padding: 90px 0 60px 0;
@@ -416,11 +414,6 @@ body {
    @media (max-width: 525px) {
       padding: 30px 0 0 0;
    }
-   &__container {
-   }
-
-   &__header {
-   }
 
    &__body {
       display: flex;
@@ -479,8 +472,7 @@ body {
    @media (max-width: 767px) {
       padding-top: 50px;
    }
-   &__container {
-   }
+
    &__background {
       position: absolute;
       opacity: 0.2;
@@ -493,8 +485,6 @@ body {
          width: 100%;
          object-fit: cover;
       }
-   }
-   &__header {
    }
 
    &__body {
@@ -510,8 +500,6 @@ body {
       display: block;
       max-width: 100%;
       height: auto;
-   }
-   &__tablet {
    }
 
    &__mobile {
@@ -545,11 +533,6 @@ body {
    }
    @media (max-width: 425px) {
       padding: 45px 0;
-   }
-   &__container {
-   }
-
-   &__header {
    }
 
    &__body {
@@ -654,8 +637,6 @@ body {
 .quote {
    background-color: #f8f8f8;
    padding: 70px 0;
-   &__container {
-   }
 
    &__body {
       padding: 0 24px;
@@ -664,6 +645,7 @@ body {
    &__item {
       padding: 0 90px;
       display: flex !important;
+      align-items: center;
       @media (max-width: 767px) {
          padding: 0 20px;
          display: block !important;
@@ -722,14 +704,6 @@ body {
    @media (max-width: 767px) {
       padding-top: 50px;
    }
-   &__container {
-   }
-
-   &__header {
-   }
-
-   &__body {
-   }
 
    &__icons {
       position: absolute;
@@ -783,8 +757,6 @@ body {
 .logos {
    background-color: #f8f8f8;
    padding: 70px 0;
-   &__container {
-   }
 
    &__image {
       img {
@@ -1096,9 +1068,6 @@ body {
       align-items: center;
    }
 
-   &__icon {
-   }
-
    &__title {
       font-size: 24px;
       color: #f38181;
@@ -1223,8 +1192,7 @@ body {
          }
       }
    }
-   &__followers-link {
-   }
+
    &__followers-text {
       color: #999;
       flex: 0 1 120px;
