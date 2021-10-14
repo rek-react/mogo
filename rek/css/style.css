@@ -898,16 +898,13 @@ body.lock {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .quote__icon {
+  border-radius: 50%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 170px;
           flex: 0 0 170px;
-  border-radius: 50%;
 }
 
 .quote__icon img {
@@ -1848,12 +1845,11 @@ body.lock {
   }
 
   .quote__item {
-    display: block !important;
     padding: 0 20px;
+    display: block !important;
   }
 
   .quote__icon {
-    width: 170px;
     margin: 0 auto;
   }
 
