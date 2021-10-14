@@ -22,12 +22,16 @@ $(document).ready(function () {
       adaptiveHeight: true
    })
 
+
+
+
+
    //upIn
    const aceptionHeader = $('.aception__header[data-collapse]')
    $(aceptionHeader).next().hide()
    const text = $(aceptionHeader).data('collapse')
    $(text).slideDown()
-   $(aceptionHeader).click(function () {
+   $(aceptionHeader).on('click', function () {
       const slideText = $(this).data('collapse')
       if (!($(this).hasClass('active'))) {
          $(this).addClass('active')
@@ -65,6 +69,13 @@ $(document).ready(function () {
 
       const gotoBlock = $(this).data('goto')
       const gotoBlockValue = $(gotoBlock).offset().top - $('.header__body').height()
+
+      if ($(menuBurg).hasClass('active')) {
+         $(menuBurg).removeClass('active')
+         $(menu).removeClass('active')
+         $(search).removeClass('active')
+         $('body').removeClass('lock')
+      }
 
       $('html, body').stop().animate({
          scrollTop: gotoBlockValue
