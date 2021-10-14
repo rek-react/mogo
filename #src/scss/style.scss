@@ -666,7 +666,7 @@ body {
       display: flex !important;
       align-items: center;
       @media (max-width: 767px) {
-         display: block;
+         display: block !important;
          padding: 0 20px;
       }
    }
