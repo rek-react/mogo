@@ -120,7 +120,7 @@ body {
       }
    }
    &__icons {
-      margin-left: 55px;
+      margin-left: 40px;
       @media (max-width: 767px) {
          margin-left: 0;
       }
@@ -213,19 +213,21 @@ body {
 .full-screen {
    display: flex;
    padding-bottom: 25px;
-   min-height: 100vh;
+   height: 100vh;
    position: relative;
+   min-height: 820px;
+   @media (max-width: 767px) {
+      min-height: 570px;
+   }
+   @media (max-width: 425px) {
+      min-height: 500px;
+   }
    &__body {
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
-      @media (min-width: 767px) {
-         min-height: 725px;
-      }
-      @media (max-width: 767px) {
-         min-height: 460px;
-      }
+
       // @media (max-width: 767px) {
       //    justify-content: flex-start;
       //    .full-screen__content {

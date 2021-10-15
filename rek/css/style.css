@@ -465,7 +465,7 @@ body.lock {
 }
 
 .menu__icons {
-  margin-left: 55px;
+  margin-left: 40px;
 }
 
 .menu__icon {
@@ -513,8 +513,9 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 25px;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
+  min-height: 820px;
 }
 
 .full-screen__body {
@@ -1640,10 +1641,6 @@ body.lock {
   .menu__list li:last-child {
     margin-right: 0;
   }
-
-  .full-screen__body {
-    min-height: 725px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -1853,8 +1850,8 @@ body.lock {
     margin-bottom: 0;
   }
 
-  .full-screen__body {
-    min-height: 460px;
+  .full-screen {
+    min-height: 570px;
   }
 
   .full-screen__title {
@@ -2094,6 +2091,10 @@ body.lock {
 
   .menu {
     padding-top: 220px;
+  }
+
+  .full-screen {
+    min-height: 500px;
   }
 
   .stat__column {
