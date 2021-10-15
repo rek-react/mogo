@@ -219,9 +219,7 @@ body {
    @media (max-width: 767px) {
       min-height: 570px;
    }
-   @media (max-width: 425px) {
-      min-height: 500px;
-   }
+
    &__body {
       display: flex;
       flex-direction: column;
