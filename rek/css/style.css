@@ -346,7 +346,6 @@ h6 {
 }
 
 .hover-image__item {
-  cursor: pointer;
   background-color: #95e1d3;
 }
 
@@ -368,27 +367,6 @@ h6 {
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   max-width: 100%;
-}
-
-.hover-image__cart:hover,
-.hover-image__cart:active {
-  -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
-}
-
-.hover-image__cart:hover > img,
-.hover-image__cart:active > img {
-  opacity: 0.1;
-}
-
-.hover-image__cart:hover .about__icon,
-.hover-image__cart:hover .about__text,
-.hover-image__cart:hover .our-team__icons,
-.hover-image__cart:active .about__icon,
-.hover-image__cart:active .about__text,
-.hover-image__cart:active .our-team__icons {
-  opacity: 1;
 }
 
 body {
@@ -659,7 +637,6 @@ body.lock {
 
 .about__icon,
 .about__text {
-  opacity: 0;
   position: absolute;
   left: 0;
   text-align: center;
@@ -668,9 +645,6 @@ body.lock {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
   z-index: 2;
 }
 
@@ -1003,7 +977,6 @@ body.lock {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1113,7 +1086,6 @@ body.lock {
 }
 
 .work__info {
-  opacity: 0;
   -webkit-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
@@ -1643,6 +1615,40 @@ body.lock {
   }
 }
 
+@media (min-width: 992px) {
+  .hover-image__cart:hover {
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+  }
+
+  .hover-image__cart:hover > img {
+    opacity: 0.1;
+  }
+
+  .hover-image__cart:hover .about__icon,
+  .hover-image__cart:hover .about__text,
+  .hover-image__cart:hover .our-team__icons {
+    opacity: 1;
+  }
+
+  .about__icon,
+  .about__text {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+  }
+
+  .our-team__icons {
+    opacity: 0;
+  }
+
+  .work__info {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .feauture__body {
     max-width: 600px;
@@ -1652,6 +1658,22 @@ body.lock {
     width: 180px;
     right: -30px;
     bottom: -70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hover-image__cart {
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+  }
+
+  .hover-image__cart > img {
+    opacity: 0.1;
+  }
+
+  .work__item > img {
+    opacity: 0.1;
   }
 }
 
@@ -2031,6 +2053,10 @@ body.lock {
     width: 130px;
     right: -10px;
     bottom: -50px;
+  }
+
+  .quote__author {
+    font-size: 20px;
   }
 
   .work__column {
