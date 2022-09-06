@@ -61,7 +61,6 @@ $(document).ready(function () {
       if ($(menuBurg).hasClass('active')) {
          $(menuBurg).removeClass('active')
          $(menu).removeClass('active')
-         $(search).removeClass('active')
          $('body').removeClass('lock')
       }
 

@@ -247,21 +247,24 @@ body {
 
 //==================================================================================================================
 .full-screen {
-   display: flex;
    padding-bottom: 25px;
-   height: 100vh;
    position: relative;
-   min-height: 820px;
-
-   @media (max-width: 767px) {
-      min-height: 570px;
-   }
+   min-height: 100vh;
+   // min-height: 820px;
+   // @media (max-width: 767px) {
+   //    min-height: 570px;
+   // }
+   display: flex;
 
    &__body {
+      padding-top: 75px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       position: relative;
+
+      @media (max-width: 767px) {
+         padding-top: 80px;
+      }
 
       // @media (max-width: 767px) {
       //    justify-content: flex-start;
@@ -293,6 +296,7 @@ body {
    &__content {
       text-align: center;
       color: #fff;
+      flex: 1 1 auto;
    }
 
    &__sup-title {
@@ -301,9 +305,24 @@ body {
    }
 
    &__title {
-      @include fontSize(140, 45);
-      text-transform: uppercase;
+      font-size: 140px;
       line-height: 140px;
+
+      @media (max-width: 1024px) {
+         font-size: 90px;
+      }
+
+      @media (max-width: 992px) {
+         font-size: 70px;
+      }
+
+      @media (max-width: 992px) {
+         font-size: 40px;
+      }
+
+
+
+      text-transform: uppercase;
       position: relative;
       padding-bottom: 70px;
       margin: 55px 0;
@@ -325,18 +344,17 @@ body {
       }
 
       @media (max-width: 525px) {
-         margin: 25px 0;
+         margin-top: 35px;
+
       }
    }
 }
 
 .slider {
-   position: absolute;
-   left: 0;
-   bottom: 0;
    width: 100%;
    display: block;
    padding: 0 30px;
+   margin-top: 30px;
 
    &__body {
       display: flex;
